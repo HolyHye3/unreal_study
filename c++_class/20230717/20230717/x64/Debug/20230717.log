@@ -1,5 +1,2 @@
-﻿  main.cpp
-C:\holyhye\20230717\20230717\main.cpp(82,17): warning C4309: '초기화 중': 상수 값이 잘립니다.
-C:\holyhye\20230717\20230717\main.cpp(88,14): warning C4305: '초기화 중': '__int64'에서 'int'(으)로 잘립니다.
-C:\holyhye\20230717\20230717\main.cpp(88,17): warning C4309: '초기화 중': 상수 값이 잘립니다.
-  20230717.vcxproj -> C:\holyhye\20230717\x64\Debug\20230717.exe
+﻿  main1pp.cpp
+  20230717.vcxproj -> C:\holyhye\unreal_study\c++_class\20230717\x64\Debug\20230717.exe

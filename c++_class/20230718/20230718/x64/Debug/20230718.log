@@ -1,2 +1,2 @@
 ﻿  main.cpp
-  20230718.vcxproj -> C:\holyhye\20230718\x64\Debug\20230718.exe
+C:\holyhye\unreal_study\c++_class\20230718\20230718\main.cpp(106): error C4700: 초기화되지 않은 'srp' 지역 변수를 사용했습니다.

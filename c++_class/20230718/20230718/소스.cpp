@@ -227,7 +227,7 @@ int main()
 	std::cout << Number << std::endl;
 	
 	/*
-	연산자 축양형: +=, -=, &=, |=
+	연산자 축약형: +=, -=, &=, |=
 	*/
 	Number = 10;
 
