@@ -110,12 +110,12 @@ int main() {
 			gameStage[location] = 0;
 		}
 
-		// a를 입력했다면 왼쪽으로 이동
+		// a를 입력했다면 오른쪽으로 이동
 		if (player == 'a') {
 
 			int newLocation = location - 1;
 
-			if (newLocation > 24 || newLocation - 1 < 0 || newLocation % 5 == 4)
+			if (newLocation > 24 || newLocation < 0 || newLocation % 5 == 4)
 				continue;
 		
 
