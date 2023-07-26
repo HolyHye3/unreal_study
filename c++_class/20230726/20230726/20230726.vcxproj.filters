@@ -18,26 +18,43 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="sol.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="main1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="sol1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="main2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="sol2.cpp">
+    <ClCompile Include="info.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main3.cpp">
+    <ClCompile Include="bingoGame.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="sol3.cpp">
+    <ClCompile Include="sortGame.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="pairGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="randomGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="info.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="bingoGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sortGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pairGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="randomGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

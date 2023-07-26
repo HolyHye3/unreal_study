@@ -60,8 +60,8 @@ int main()
 	TEST;
 
 	// 구조체도 배열과 같이 초기화가 가능하다.
-	// Player player = {}; // 모든 변수를 0으로 초기화한다.
-	Player player = {"aa", CharacterType::Type1};
+	Player player = {}; // 모든 변수를 0으로 초기화한다.
+	//Player player = {"aa", CharacterType::Type1};
 
 
 	// 구조체는 .을 이용해서 멤버에 접근한다.

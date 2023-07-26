@@ -225,13 +225,13 @@ int main()
         // 6 - 6 = 0
         for (int j = 0; j < Line / 2 - Count; ++j)
         {
-            std::cout << "Line / 2 - Count: " << Line / 2 - Count << std::endl;
+            //std::cout << "Line / 2 - Count: " << Line / 2 - Count << std::endl;
             std::cout << " ";
         }
-
+         
         for (int j = 0; j < Count * 2 + 1; ++j)
         {
-            std::cout << "Count * 2 + 1: " << Count * 2 + 1 << std::endl;
+            //std::cout << "Count * 2 + 1: " << Count * 2 + 1 << std::endl;
             std::cout << "¡Ú";
         }
 
