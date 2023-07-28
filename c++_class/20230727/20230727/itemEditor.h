@@ -6,5 +6,5 @@ void CreateItem(Item* Array, int& Count);
 void OutputItemList(Item* Array, int Count);
 void SaveItemList(Item* Array, int Count);
 void LoadItemList(Item* Array, int& Count);
-void DeleteItemLit();
+void DeleteItemList(Item* Array, int& Count);
 void ModifyItemList();

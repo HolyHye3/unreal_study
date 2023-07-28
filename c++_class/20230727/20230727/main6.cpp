@@ -46,6 +46,7 @@ int main()
 			CreateItem(item, Count);
 			break;
 		case EMainMenu::DeleteItem:
+			DeleteItemList(item, Count);
 			break;
 		case EMainMenu::ModifyItem:
 			break;
