@@ -19,6 +19,8 @@ int main()
 
 	while (true)
 	{
+		system("cls");
+
 		std::cout << "1.아이템 생성" << std::endl;
 		std::cout << "2.아이템 삭제" << std::endl;
 		std::cout << "3.아이템 수정" << std::endl;
@@ -39,15 +41,17 @@ int main()
 		switch ((EMainMenu)Input)
 		{
 		case EMainMenu::CreateItem:
-			CreateItem(item, &Count);
+			CreateItem(item, Count);
 			break;
 		case EMainMenu::DeleteItem:
 			break;
 		case EMainMenu::ModifyItem:
 			break;
 		case EMainMenu::OutputItem:
+			OutputItem(item, Count);
 			break;
 		case EMainMenu::SaveItem:
+			
 			break;
 		case EMainMenu::LoadItem:
 			break;
