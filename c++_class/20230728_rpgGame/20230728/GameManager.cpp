@@ -9,6 +9,7 @@ bool GameInit(Store* store, Item* inventory)
     return true;
 }
 
+
 EMainMenu Menu()
 {
     system("cls");
