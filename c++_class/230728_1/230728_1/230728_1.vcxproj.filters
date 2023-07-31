@@ -13,42 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="01. GameManager">
-      <UniqueIdentifier>{e61b0d37-548f-41d1-b0fa-f87b6c69fc45}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="02. Battle">
-      <UniqueIdentifier>{2fa361ff-e1a5-4a5d-b165-9f86b9720872}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main1.cpp">
+    <ClCompile Include="GameManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="GameManger.cpp">
-      <Filter>01. GameManager</Filter>
+    <ClCompile Include="Store.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BattleManager.cpp">
-      <Filter>02. Battle</Filter>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Battle.cpp">
-      <Filter>02. Battle</Filter>
+    <ClCompile Include="Info.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Info.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="GameManger.h">
-      <Filter>01. GameManager</Filter>
+    <ClInclude Include="GameManager.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="BattleManager.h">
-      <Filter>02. Battle</Filter>
+    <ClInclude Include="Store.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Battle.h">
-      <Filter>02. Battle</Filter>
+    <ClInclude Include="Inventory.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

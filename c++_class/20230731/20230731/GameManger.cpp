@@ -41,6 +41,7 @@ bool CGameManger::Init()
 	// 전투 관리자 클래스 생성과 초기화
 	mBattleMgr = new CBattleManager;
 
+	// 구조체 포인터는 -> 이용해서 참조하는 대상의 멤버에 접근할 수 있다.
 	if (!mBattleMgr->Init())
 		return false;
 
