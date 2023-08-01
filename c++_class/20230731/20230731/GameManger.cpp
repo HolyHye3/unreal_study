@@ -1,14 +1,17 @@
 #include "GameManger.h"
 
+CGameManager* CGameManager::mInst = nullptr;
+
 // 게임 매니저 생성자
-CGameManger::CGameManger():
+
+CGameManager::CGameManager():
 	mBattleMgr(nullptr) //0
 {
 }
 
 // 게임 매니저 소멸자
 // 메모리가 제거가 될 때 자동으로 호출된다.
-CGameManger::~CGameManger()
+CGameManager::~CGameManager()
 {
 	if (mBattleMgr)
 	{
@@ -17,7 +20,7 @@ CGameManger::~CGameManger()
 	}
 }
 
-EMainMenu CGameManger::Menu()
+EMainMenu CGameManager::Menu()
 {
 	system("cls");
 	std::cout << "1. 전투" << std::endl;
@@ -36,7 +39,7 @@ EMainMenu CGameManger::Menu()
 	return (EMainMenu)Input;
 }
 
-bool CGameManger::Init()
+bool CGameManager::Init()
 {
 	// 전투 관리자 클래스 생성과 초기화
 	mBattleMgr = new CBattleManager;
@@ -48,7 +51,7 @@ bool CGameManger::Init()
 	return true;
 }
 
-void CGameManger::Run()
+void CGameManager::Run()
 {
 	while (true)
 	{

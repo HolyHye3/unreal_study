@@ -19,7 +19,7 @@ EBattleMenu CBattleManager::Menu()
 	std::cout << "1. 쉬움 " << std::endl;
 	std::cout << "2. 보통 " << std::endl;
 	std::cout << "3. 어려움 " << std::endl;
-	std::cout << "1. 뒤로가기" << std::endl;
+	std::cout << "4. 뒤로가기" << std::endl;
 	std::cout << "메뉴를 선택하세요 : " << std::endl;
 
 	int Input;
