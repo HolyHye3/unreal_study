@@ -1,11 +1,11 @@
 #include "GameManger.h"
+#include "BattleManager.h"
+
 
 CGameManager* CGameManager::mInst = nullptr;
 
 // 게임 매니저 생성자
-
-CGameManager::CGameManager():
-	mBattleMgr(nullptr) //0
+CGameManager::CGameManager()
 {
 }
 
@@ -13,11 +13,6 @@ CGameManager::CGameManager():
 // 메모리가 제거가 될 때 자동으로 호출된다.
 CGameManager::~CGameManager()
 {
-	if (mBattleMgr)
-	{
-		delete mBattleMgr;
-		mBattleMgr = nullptr;
-	}
 }
 
 EMainMenu CGameManager::Menu()
@@ -42,10 +37,7 @@ EMainMenu CGameManager::Menu()
 bool CGameManager::Init()
 {
 	// 전투 관리자 클래스 생성과 초기화
-	mBattleMgr = new CBattleManager;
-
-	// 구조체 포인터는 -> 이용해서 참조하는 대상의 멤버에 접근할 수 있다.
-	if (!mBattleMgr->Init())
+	if (CBattleManager::GetInst()->Init())
 		return false;
 
 	return true;
@@ -58,7 +50,7 @@ void CGameManager::Run()
 		switch (Menu())
 		{
 		case EMainMenu::Battle:
-			mBattleMgr->Run();
+			CBattleManager::GetInst()->Run();
 			break;
 		case EMainMenu::Store:
 			break;

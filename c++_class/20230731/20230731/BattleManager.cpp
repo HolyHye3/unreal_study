@@ -35,7 +35,7 @@ EBattleMenu CBattleManager::Menu()
 
 bool CBattleManager::Init()
 {
-	return false;
+	return true;
 }
 
 void CBattleManager::Run()
