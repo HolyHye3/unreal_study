@@ -7,9 +7,12 @@ class CBattle
 public:
 	CBattle();
 	~CBattle();
-	
+
+private:
+	EBattleType mBattleType;
+
 public:
-	bool Init();
+	bool Init(EBattleType Type);
 	void Run();
 };
 

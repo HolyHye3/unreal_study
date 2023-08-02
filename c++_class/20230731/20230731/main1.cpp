@@ -122,10 +122,12 @@ int main()
 	// 3. 해당 인스턴스에서 Init() 함수호출 -> 실패시 싱글톤 인스턴스 파괴
 	if (CGameManager::GetInst()->Init() == false)
 	{
+		std::cout << "초기화 실패!" << std::endl;
 		CGameManager::DestoryInst();
 		return 0;
 	}
 
+	std::cout << "초기화 성공!" << std::endl;
 	// 초기화 성공시 게임실행 함수 호출
 	CGameManager::GetInst()->Run();
 

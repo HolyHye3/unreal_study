@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Info.h"
-#include "BattleManager.h"
 
 enum class EMainMenu
 {

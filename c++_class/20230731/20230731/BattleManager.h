@@ -2,6 +2,7 @@
 
 #include "Info.h"
 
+
 enum class EBattleMenu
 {
 	None,
@@ -16,9 +17,7 @@ enum class EBattleMenu
 	include 없이 할 수 있기 때문에 헤더의 순환참조를 막아줄 수 있다.
 	특정 클래스가 있다 라고 가정을 해주고 해당 타입의 포인터 타입 변수만 선언이 가능한 형태로 만들어주는 것이다.
 */
-
 class CBattle;
-class CBattleManager;
 
 class CBattleManager
 {
@@ -46,6 +45,9 @@ public:
 		}
 	}
 
+// 배틀 난이도 설정
+private:
+	CBattle* mBattle[3];
 
 private:
 	EBattleMenu Menu();

@@ -19,6 +19,9 @@
     <Filter Include="02. Battle">
       <UniqueIdentifier>{2fa361ff-e1a5-4a5d-b165-9f86b9720872}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03. Object">
+      <UniqueIdentifier>{e584de8f-aba0-45cb-9be2-ab4dc608c079}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +39,15 @@
     <ClCompile Include="Battle.cpp">
       <Filter>02. Battle</Filter>
     </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>03. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>03. Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Info.h">
@@ -49,6 +61,15 @@
     </ClInclude>
     <ClInclude Include="Battle.h">
       <Filter>02. Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>03. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>03. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>03. Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
