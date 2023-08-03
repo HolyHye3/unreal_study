@@ -37,7 +37,7 @@ EMainMenu CGameManager::Menu()
 bool CGameManager::Init()
 {
 	// 전투 관리자 클래스 생성과 초기화
-	if (CBattleManager::GetInst()->Init())
+	if (!CBattleManager::GetInst()->Init())
 		return false;
 
 	return true;

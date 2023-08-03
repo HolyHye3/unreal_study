@@ -24,5 +24,15 @@ void CBattle::Run()
 
 	CMonster* Monster = CObjectManager::GetInst()->CreateMonster(mBattleType);
 
+	while (true)
+	{
+		system("cls");
+
+		std::cout << "========== Player ==========" << std::endl;
+		Player->Output();
+	}
+
+
+
 }
 

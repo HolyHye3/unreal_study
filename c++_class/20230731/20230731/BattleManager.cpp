@@ -68,7 +68,7 @@ void CBattleManager::Run()
 			mBattle[2]->Run();
 			break;
 		case EBattleMenu::Back:
-			break;
+			return;
 		}
 	}
 }

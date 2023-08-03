@@ -2,6 +2,20 @@
 
 #include "Info.h"
 
+enum class EBattleMenu
+{
+	None,
+	Attack,
+	Back
+};
+
+enum class EBattleResult
+{
+	None,
+	PlayerDeath,
+	MonsterDeath
+};
+
 class CBattle
 {
 public:

@@ -77,3 +77,26 @@ bool CPlayer::Init()
 
     return true;
 }
+
+void CPlayer::Output()
+{
+    std::cout << "이름 : " << mName << "/t작업 : ";
+
+    switch (mJob)
+    {
+    case EJob::Knight:
+        std::cout << "기사" << std::endl;
+        break;
+    case EJob::Archer:
+        std::cout << "궁수" << std::endl;
+        break;
+    case EJob::Magicion:
+        std::cout << "마법사" << std::endl;
+        break;
+    }
+
+    std::cout << "레벨 : " << mLevel << "\t경험치 : " << mExp << std::endl;
+    std::cout << "공격력 : " << mAttack << "\t방어력 : " << mArmor << std::endl;
+    std::cout << "체력 : " << mHP << " / " << mHPMax << "\t마나 : " << mMP << "/" << mMPMax << std::endl;
+    std::cout << "보유금액 : " << mMoney << std::endl;
+}
