@@ -46,6 +46,7 @@ public:
 		mHP -= Dmg;
 
 		// 체력이 0보다 작거나 같을 경우(죽었을 경우) true, 아니면 false를 리턴한다.
+		return mHP <= 0;
 	}
 
 	void AddExp(int Exp)
