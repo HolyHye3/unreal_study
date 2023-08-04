@@ -107,7 +107,7 @@ public:
 
 	T& operator [] (int Index) const
 	{
-		return mData[Index]          
+		return mData[Index];
 	}
 
 	/*void* operator new(size_t Size) const

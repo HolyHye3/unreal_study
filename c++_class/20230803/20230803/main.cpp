@@ -144,10 +144,8 @@ int main()
 
 	// oprater는 함수와 같다. 함수처럼 호출개념이다.
 	// 아래는 pt1의 + operator를 호출해주는데 + operator의 인자에 pt2를 전달하는 것이다.
-	/*
-		int x, y;
-	
 	*/
+
 	pt3 = pt1 + pt2;
 
 	pt3 = pt1 + 100;
