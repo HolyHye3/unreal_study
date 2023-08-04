@@ -2,8 +2,7 @@
 
 #include "Info.h"
 
-
-enum class EBattleMenu
+enum class EBattleLevelMenu
 {
 	None,
 	Easy,
