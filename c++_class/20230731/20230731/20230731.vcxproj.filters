@@ -42,10 +42,10 @@
     <ClCompile Include="ObjectManager.cpp">
       <Filter>03. Object</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Monster.cpp">
+      <Filter>03. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
       <Filter>03. Object</Filter>
     </ClCompile>
   </ItemGroup>

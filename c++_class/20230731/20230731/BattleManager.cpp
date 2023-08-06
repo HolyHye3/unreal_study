@@ -19,7 +19,7 @@ CBattleManager::~CBattleManager()
 }
 
 // 전투 매니저 메뉴 호출하기함수
-EBattleMenu CBattleManager::Menu()
+EBattleLevelMenu CBattleManager::Menu()
 {
 	system("cls");
 	std::cout << "1. 쉬움 " << std::endl;
@@ -32,11 +32,11 @@ EBattleMenu CBattleManager::Menu()
 
 	std::cin >> Input;
 
-	if (Input <= (int)EBattleMenu::None ||
-		Input > (int)EBattleMenu::Back)
-		return EBattleMenu::None;
+	if (Input <= (int)EBattleLevelMenu::None ||
+		Input > (int)EBattleLevelMenu::Back)
+		return EBattleLevelMenu::None;
 
-	return (EBattleMenu)Input;
+	return (EBattleLevelMenu)Input;
 }
 
 bool CBattleManager::Init()
@@ -58,16 +58,14 @@ void CBattleManager::Run()
 	{
 		switch (Menu())
 		{
-		case EBattleMenu::Easy:
+		case EBattleLevelMenu::Easy:
 			mBattle[0]->Run();
 			break;
-		case EBattleMenu::Normal:
+		case EBattleLevelMenu::Normal:
 			mBattle[1]->Run();
 			break;
-		case EBattleMenu::Hard:
+		case EBattleLevelMenu::Hard:
 			mBattle[2]->Run();
-			break;
-		case EBattleMenu::Back:
 			return;
 		}
 	}

@@ -49,7 +49,7 @@ private:
 	CBattle* mBattle[3];
 
 private:
-	EBattleMenu Menu();
+	EBattleLevelMenu Menu();
 	
 public:
 	bool Init();

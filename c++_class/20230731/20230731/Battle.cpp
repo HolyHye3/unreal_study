@@ -91,6 +91,8 @@ void CBattle::Run()
 		case EBattleMenu::Attack:
 			switch (Attack(Player,Monster))
 			{
+			case EBattleResult::None:
+				break;
 			case EBattleResult::PlayerDeath:
 				break;
 			case EBattleResult::MonsterDeath:
