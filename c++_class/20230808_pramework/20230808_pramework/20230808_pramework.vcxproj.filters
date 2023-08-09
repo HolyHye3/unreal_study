@@ -16,8 +16,14 @@
     <Filter Include="01.GameManager">
       <UniqueIdentifier>{dd386aa0-4e70-4887-b163-632ce56f9de9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="02.Level">
-      <UniqueIdentifier>{a5834e3a-a4c1-46f2-a728-5b87bef7d005}</UniqueIdentifier>
+    <Filter Include="01.GameManager\01.Timer">
+      <UniqueIdentifier>{b0af7427-d003-4bd2-976a-ea57887c4df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Level">
+      <UniqueIdentifier>{9a77b2cb-734d-442b-bc62-8088fb13c529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object">
+      <UniqueIdentifier>{8826c38d-c1df-4615-93b0-4d2d72c94943}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -26,6 +32,15 @@
     </ClCompile>
     <ClCompile Include="GameManager.cpp">
       <Filter>01.GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>01.GameManager\01.Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelManager.cpp">
+      <Filter>02. Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Level.cpp">
+      <Filter>02. Level</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +52,21 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>01.GameManager\01.Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Level.h">
+      <Filter>02. Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelManager.h">
+      <Filter>02. Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\MainLevel.h">
+      <Filter>02. Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Object.h">
+      <Filter>03. Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
