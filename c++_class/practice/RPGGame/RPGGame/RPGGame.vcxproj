@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{21abf6ef-ad5a-489b-b015-c6831eaf8278}</ProjectGuid>
-    <RootNamespace>My20230731</RootNamespace>
+    <ProjectGuid>{bba6f3b3-119d-4ec1-ac06-2bc79674bb05}</ProjectGuid>
+    <RootNamespace>RPGGame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,25 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Battle.cpp" />
-    <ClCompile Include="BattleManager.cpp" />
-    <ClCompile Include="GameManger.cpp" />
-    <ClCompile Include="main.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="main1.cpp" />
-    <ClCompile Include="Monster.cpp" />
-    <ClCompile Include="ObjectManager.cpp" />
-    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Battle.h" />
-    <ClInclude Include="BattleManager.h" />
-    <ClInclude Include="GameManger.h" />
-    <ClInclude Include="Info.h" />
-    <ClInclude Include="Monster.h" />
-    <ClInclude Include="ObjectManager.h" />
-    <ClInclude Include="Player.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="info.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
