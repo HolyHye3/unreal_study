@@ -2,6 +2,15 @@
 
 #include "info.h"
 
+enum class EMainMenu
+{
+	None,
+	Battle,
+	Store,
+	Inventory,
+	Exit
+};
+
 class CGameManager
 {
 // Singleton패턴을 위한 생성자 private로 선언
@@ -26,16 +35,23 @@ public:
 		return mInst;
 	}
 
+	// 할당된 메모리 해제
 	static void DestroyInst()
 	{
 		if (nullptr != mInst)
 		{
+			delete mInst;
 
+			mInst = nullptr;
 		}
 	}
 
+private:
+	EMainMenu Menu();
 
-
+public:
+	void Init();
+	void Run();
 
 };
 
