@@ -13,13 +13,14 @@ enum class EMainMenu
 
 class CGameManager
 {
-// Singleton패턴을 위한 생성자 private로 선언
+// Singleton패턴 을 위한 생성자 private로 선언
 private:
 	CGameManager();
 	~CGameManager();
 
 private:
-	// CSingleton 클래스 동적할당
+	// CGameManager 메모리 동적 할당을 위한 포인터 변수 선언
+	// 공간 마련
 	static CGameManager* mInst;
 
 public:
@@ -27,6 +28,8 @@ public:
 	static CGameManager* GetInst()
 	{
 		// 메모리 주소를 mInst변수에 저장
+		// 객체 안에 직접 데이터를 저장하는 것이 아니라 힙 영역에 따로 저장이 되고
+		// 객체는 데이터들이 어디에 있는지 알려주는 정보만 저장된다.
 		if (nullptr == mInst)
 			mInst = new CGameManager;
 
@@ -50,7 +53,7 @@ private:
 	EMainMenu Menu();
 
 public:
-	void Init();
+	bool Init();
 	void Run();
 
 };
