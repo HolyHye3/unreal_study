@@ -48,7 +48,7 @@ public:
 			mInst = nullptr;
 		}
 	}
-
+	 
 private:
 	EMainMenu Menu();
 
